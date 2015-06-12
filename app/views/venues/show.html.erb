@@ -1,8 +1,10 @@
-<h1 class="page-header">
-  <% if @venue.present? %>
-  <%= @venue.name %>
-  <%= @venue.location %>
-<% end %>
-</h1>
+<div class="container">
+  <h1 class="page-header">
+    <% if @venue.present? %>
+      <%= @venue.name %>
+<small><%= @venue.location %></small>
+      <% end %>
+  </h1>
+</div>
 
 
