@@ -18,5 +18,6 @@ class Admin::SessionsController < ApplicationController
   def destroy
     session[:user_id] = nill
     redirect_to root_path
+  end
 
 end
