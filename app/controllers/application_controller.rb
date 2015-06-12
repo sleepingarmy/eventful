@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
    def current_admin
-  	@current_admin ||= User.where(id: session[:admin_id]).first
+  	@current_admin ||= Admin.where(id: session[:admin_id]).first
   end
 
   private
