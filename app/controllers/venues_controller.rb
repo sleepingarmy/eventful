@@ -1,11 +1,11 @@
-class VenuesController < ApplicationController
-  
+class SchedulesController < ApplicationController
+
    def index
-    @venues = Venue.all
+    @schedules = Venue.all
   end
 
   def show
-    @venue = Venue.where(id: params[:id])
+    @schedule = Venue.where(id: params[:id])
   end
   
 end
