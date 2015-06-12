@@ -29,7 +29,7 @@ class VenuesController < ApplicationController
       render :edit
   end
   def show
-    @venue= Venue.where(id: params[:id])
+    @venue = Venue.where(id: params[:id])
   end
 
   private
