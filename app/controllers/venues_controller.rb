@@ -1,6 +1,6 @@
 class VenuesController < ApplicationController
 
-   def index
+  def index
     @venues = Venue.all
   end
 
@@ -27,7 +27,9 @@ class VenuesController < ApplicationController
       redirec_to venues_path
     else
       render :edit
+    end
   end
+  
   def show
     @venue = Venue.where(id: params[:id])
   end

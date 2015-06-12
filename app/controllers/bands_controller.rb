@@ -1,5 +1,5 @@
 class BandsController < ApplicationController
-  before_action :find_band, only: [:edit. :update, :show, :destroy]
+  before_action :find_band, only: [:edit, :update, :show, :destroy]
 
   def index
     @bands = Band.all
