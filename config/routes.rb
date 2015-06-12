@@ -6,4 +6,10 @@ Rails.application.routes.draw do
     post '/post' => 'sessions#create'
   end
 
+  resources :venues
+
+  resources :schedules
+
+  resources :bands
+
 end
