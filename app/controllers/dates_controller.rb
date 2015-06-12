@@ -1,11 +1,11 @@
 class DatesController < ApplicationController
-  
+
   def index
-    @dates = Date.all
+    @schedules = Schedule.all
   end
 
   def show
-    @date = Date.where(id: params[:id])
+    @schedule = Schedule.where(id: params[:id])
   end
 
 end
