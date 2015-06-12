@@ -10,17 +10,17 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <li>
-          <% if admin_signed_in? %>
-            <%= link_to('Log Out', admin_logout_path, method: :delete) %>
-            <%= link_to('Admin Home', admin_path) %>
-          <% else %>
-            <%= link_to('Admin Log In', admin_login_path) %>
-            <%= link_to('Bands', bands_path) %>
-            <%= link_to('Venues', venues_path) %>
-            <%= link_to('Schedule', schedules_path) %>
-          <% end %>
-        </li>
+          <ul class="nav nav-pills">
+
+            <li> <%= link_to('Log Out', admin_logout_path, method: :delete) %></li>
+            <li> <%= link_to('Admin Home', admin_path) %></li>
+
+            <li> <%= link_to('Admin Log In', admin_login_path) %></li>
+            <li> <%= link_to('Bands', bands_path) %></li>
+            <li> <%= link_to('Venues', venues_path) %></li>
+            <li> <%= link_to('Schedule', schedules_path) %></li>
+
+        </ul>
       </div>
     </div>
     <div class="row">
