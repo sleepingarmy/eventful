@@ -5,7 +5,7 @@ class BandsController < ApplicationController
   end
 
   def show
-    @band = Band.where(id: params[:id])
+  
   end
 
 end
