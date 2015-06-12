@@ -5,7 +5,7 @@ class VenuesController < ApplicationController
   end
 
   def show
-    @venue= Venue.where(id: params[:id])
+    @venue = Venue.where(id: params[:id])
   end
   
 end

@@ -7,6 +7,8 @@ class ApplicationController < ActionController::Base
   	@current_admin ||= Admin.where(id: session[:admin_id]).first
   end
 
+  helper_method :current_admin
+  
   private
 
   def authenticate_admin
