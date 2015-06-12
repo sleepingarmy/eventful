@@ -1,4 +1,4 @@
-class Admin::Sessions_Controller.rb < ApplicationController
+class Admin::SessionsController < ApplicationController
 
 	def new
 		
@@ -7,5 +7,5 @@ class Admin::Sessions_Controller.rb < ApplicationController
 	def create
 
 	end
-	
+
 end
