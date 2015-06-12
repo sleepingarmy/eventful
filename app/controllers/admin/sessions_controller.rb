@@ -18,6 +18,7 @@ class Admin::SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
+    flash[:notice] = "You logged out."
     redirect_to admin_path
   end
 

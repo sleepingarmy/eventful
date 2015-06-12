@@ -3,9 +3,9 @@
 	<h1> Admin Home Page </h1>
 </div>
 
-<% unless admin_signed_in? %>
+<% if !admin_signed_in? %>
 	<div type="button" class="btn btn-default btn-lg">
 		<a href="<%= admin_login_path %>"> Login </a>
 	</div>
-<% else %>
 <% end %>
+ 
